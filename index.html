@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Menu Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .menu {
+            margin-bottom: 20px;
+        }
+        .menu-item {
+            margin: 5px 0;
+        }
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>PIZZA MENU CARD</h2>
+    <div class="menu">
+        <div class="menu-item">1. PEPPERONI — Php 400</div>
+        <div class="menu-item">2. 4 CHEESE — Php 400</div>
+        <div class="menu-item">3. HAM AND CHEESE — Php 360</div>
+        <div class="menu-item">4. MUSHROOM — Php 360</div>
+    </div>
+
+    <label for="choice">Enter your choice (1–4):</label>
+    <input type="number" id="choice" min="1" max="4"><br><br>
+
+    <label for="quantity">Enter the quantity:</label>
+    <input type="number" id="quantity" min="1"><br><br>
+
+    <button onclick="calculate()">Submit</button>
+
+    <div class="result" id="result"></div>
+
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
